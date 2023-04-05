@@ -55,20 +55,7 @@
         
             <table onMouseover="this.bgColor='#4FB3BF'"onMouseout="this.bgColor=''">
 
-            <?php 
-            $sql2="SELECT * FROM ryby";
-            $res2 = $con->query($sql2);  
-            $rows2 = $res2->fetch_all(MYSQLI_ASSOC);
-            
-            
-            
-        for ($y=0;$i<count($rows2);$y++){
-            
-            echo ''.$rows[$y]["id"].', '.$rows[$y]["nazwa"].', '.$rows[$y]["wystepowanie"].'';
-        }
-            
-            
-            ?>
+         
 
                 <tr>
                     <td>L.p.</td><td>Gatunek</td><td>Występowanie</td>
